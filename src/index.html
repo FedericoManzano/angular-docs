@@ -6,8 +6,33 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/bodystyle.css">
+  <link rel="stylesheet" href="assets/icon.css">
+  <link rel="stylesheet" href="https://rawcdn.githack.com/FedericoManzano/dynamics-tips2/5b1314c0aff6b0f02a9fa77ceee9f0e5b5c0a6f1/dist/css/dynamics.min.css">
+
+  <link rel="stylesheet" href="https://rawcdn.githack.com/FedericoManzano/show-code/a5e13aa03697269a68b185b555034f8476fa6a22/dist/css/tema-oscuro.min.css">
 </head>
 <body>
   <app-root></app-root>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script src="assets/bodystyle.js"></script>
+  <script src="assets/sidebar.js"></script>
+  <script src="assets/colapso.js"></script>
+
+  <script>
+    $(document).ready(() => {
+      Sidebar.init()
+      NavColapso.init()
+      Copy.init()
+    })
+  </script>
 </body>
 </html>
+    
+        

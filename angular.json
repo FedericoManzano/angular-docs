@@ -33,7 +33,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/show-sintax/src/modulos/CodigoHtml.js",
+              "node_modules/dynamics-tips/src/Dynamics.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,11 @@
+.pagina {
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 280px;
+
+    @media (max-width: 1020px) {
+        width: 100%;
+        margin-left: 0;
+        padding: 30px;
+    }
+}
