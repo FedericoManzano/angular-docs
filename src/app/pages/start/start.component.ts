@@ -55,6 +55,8 @@ export class StartComponent implements OnInit, AfterViewInit {
   footer:string = ""
   plantilla:string = ""
 
+  titulo:string = "Bodystyle"
+  parrafo:string =  "Librería de estilos CSS para la rápida creación de la interfaz de usuario UI";
 
   ngOnInit(): void {
 

@@ -7,7 +7,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ArticleComponent } from './components/article/article.component';
 import { StartComponent } from './pages/start/start.component';
 import { PaginasComponent } from './components/paginas/paginas.component';
-import { Tituloh1Component } from './components/tituloh1/tituloh1.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { DescargaComponent } from './pages/descarga/descarga.component';
+import { ComponentePrincipalComponent } from './components/componente-principal/componente-principal.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { Tituloh1Component } from './components/tituloh1/tituloh1.component';
     ArticleComponent,
     StartComponent,
     PaginasComponent,
-    Tituloh1Component
+    FooterComponent,
+    DescargaComponent,
+    ComponentePrincipalComponent
   ],
   imports: [
     BrowserModule,
