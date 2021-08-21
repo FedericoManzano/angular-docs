@@ -10,6 +10,7 @@ import { PaginasComponent } from './components/paginas/paginas.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DescargaComponent } from './pages/descarga/descarga.component';
 import { ComponentePrincipalComponent } from './components/componente-principal/componente-principal.component';
+import { WebpackComponent } from './pages/webpack/webpack.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ComponentePrincipalComponent } from './components/componente-principal/
     PaginasComponent,
     FooterComponent,
     DescargaComponent,
-    ComponentePrincipalComponent
+    ComponentePrincipalComponent,
+    WebpackComponent
   ],
   imports: [
     BrowserModule,
