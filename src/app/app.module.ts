@@ -11,6 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DescargaComponent } from './pages/descarga/descarga.component';
 import { ComponentePrincipalComponent } from './components/componente-principal/componente-principal.component';
 import { WebpackComponent } from './pages/webpack/webpack.component';
+import { ContenedorComponent } from './pages/contenedor/contenedor.component';
+import { FlexboxComponent } from './pages/flexbox/flexbox.component';
+import { GrillaComponent } from './pages/grilla/grilla.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { WebpackComponent } from './pages/webpack/webpack.component';
     FooterComponent,
     DescargaComponent,
     ComponentePrincipalComponent,
-    WebpackComponent
+    WebpackComponent,
+    ContenedorComponent,
+    FlexboxComponent,
+    GrillaComponent
   ],
   imports: [
     BrowserModule,
