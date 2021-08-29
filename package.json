@@ -18,6 +18,7 @@
     "@angular/platform-browser": "~12.0.1",
     "@angular/platform-browser-dynamic": "~12.0.1",
     "@angular/router": "~12.0.1",
+    "body-ui": "^3.5.6",
     "dynamics-tips": "^2.0.5",
     "rxjs": "~6.6.0",
     "show-sintax": "^1.1.1",

@@ -16,6 +16,8 @@ import { FlexboxComponent } from './pages/flexbox/flexbox.component';
 import { GrillaComponent } from './pages/grilla/grilla.component';
 
 
+import { InicializarService  } from './services/inicializar.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,9 @@ import { GrillaComponent } from './pages/grilla/grilla.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    InicializarService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

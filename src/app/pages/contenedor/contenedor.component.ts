@@ -3,7 +3,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 declare var CodigoHtml : any
 declare var CodigoCss : any
-
+declare var BS : any
 
 @Component({
   selector: 'app-contenedor',
@@ -32,8 +32,10 @@ export class ContenedorComponent implements OnInit, AfterViewInit {
     `
   }
   ngAfterViewInit(): void {
-    CodigoHtml.iniciar({lineas: false, tipo: "texto"})
-    CodigoCss.iniciar({lineas: false})
+    //CodigoHtml.iniciar({lineas: false, tipo: "texto"})
+    BS.CssInit({lineas: false})
+    BS.HtmlInit({lineas: false, tipo: "texto"})
+    BS.AutoInit()
   }
 
 

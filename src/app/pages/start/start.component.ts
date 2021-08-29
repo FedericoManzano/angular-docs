@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { InicializarService } from "../../services/inicializar.service"
 
 declare var CodigoHtml : any
 
@@ -10,7 +11,7 @@ declare var CodigoHtml : any
 })
 export class StartComponent implements OnInit, AfterViewInit {
 
-  constructor() { 
+  constructor( private iniciar: InicializarService ) { 
     this.cabecera = `
     <!-- Meta viewport necesario para poder utilizar resposive en la página -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -49,7 +50,7 @@ export class StartComponent implements OnInit, AfterViewInit {
  
   ngAfterViewInit(): void {
     CodigoHtml.iniciar({lineas: false, tipo: "texto"})
-     
+    this.iniciar.iniciar()
   }
   cabecera:string = ""
   footer:string = ""
@@ -57,6 +58,13 @@ export class StartComponent implements OnInit, AfterViewInit {
 
   titulo:string = "Bodystyle"
   parrafo:string =  "Librería de estilos CSS para la rápida creación de la interfaz de usuario UI";
+
+
+  mostrarToast() {
+    this.iniciar.mensaje()
+  }
+
+
 
   ngOnInit(): void {
 

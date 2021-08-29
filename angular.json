@@ -40,7 +40,9 @@
               "node_modules/show-sintax/src/modulos/CodigoHtml.js",
               "node_modules/show-sintax/src/modulos/CodigoJs.js",
               "node_modules/show-sintax/src/modulos/CodigoCss.js",
-              "node_modules/dynamics-tips/src/Dynamics.js"
+              "node_modules/dynamics-tips/src/Dynamics.js",
+              "node_modules/body-ui/src/app.js",
+              "node_modules/dynamics-tips/src/moduls/Toast.js"
             ]
           },
           "configurations": {
