@@ -3,17 +3,17 @@
     <app-componente-principal [titulo]="titulo" [parrafo]="parrafo"></app-componente-principal>
     <app-article>
 
-        <h2 class="h2">Clase container</h2>
+        <h2 class="h2 scroll-item" id="clase">Clase container</h2>
 
         <p class="p">
-            Se ñade la clase <span class="res">container</span> para centrar el contenido dentro 
+            Se añade la clase <span class="res">container</span> para centrar el contenido dentro 
             de una etiqueta HTML.
          </p>
 
         <div class="container mb-2">
             <div class="box">Caja</div>
         </div>
-        <a class="copy" data-target="#1">
+        <a class="copy" data-target="#1" (click)="mostrarToast()">
             <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
               Copiar
             </span>
@@ -23,7 +23,7 @@
         {{container}}
         </pre>
 
-        <a class="copy" data-target="#2">
+        <a class="copy" data-target="#2" (click)="mostrarToast()">
             <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
               Copiar
             </span>
@@ -35,4 +35,11 @@
     </app-article>
 
 </app-paginas>
-        
+     
+
+<div class="scroll-spy">
+    <ul>
+        <li><a data-scroll="#clase">Clase</a></li>
+     
+    </ul>
+  </div>

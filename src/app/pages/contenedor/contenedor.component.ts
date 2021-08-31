@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-
+import { InicializarService } from "../../services/inicializar.service"
 
 declare var CodigoHtml : any
 declare var CodigoCss : any
@@ -12,7 +12,7 @@ declare var BS : any
 })
 export class ContenedorComponent implements OnInit, AfterViewInit {
 
-  constructor() { 
+  constructor( private iniciar: InicializarService ) { 
     this.container = `
     <div class="container">
       <div class="box">Caja</div>
@@ -49,7 +49,15 @@ export class ContenedorComponent implements OnInit, AfterViewInit {
 
   container:string=""
 
+  mostrarToast() {
+    this.iniciar.mensaje()
+  }
+
+
+
   ngOnInit(): void {
+    this.iniciar.scrollSpy()
+
   }
 
 }

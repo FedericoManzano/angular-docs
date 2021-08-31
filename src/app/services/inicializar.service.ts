@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as $ from "jquery"
 import Toast from "./Toast"
-
+import ScrollSpy from "./ScrollSpy"
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +37,10 @@ export class InicializarService {
 
   mensaje () {
     Toast.show({html: "Copiado !! <span class='bs-ok'></span>", bg: "green"})
-    
+  }
+
+  scrollSpy () {
+    ScrollSpy.init()
   }
 
   

@@ -5,11 +5,7 @@
 
 
     <app-article>
-
-      
-        <h2 class="h2">CDN</h2>
-
-
+        <h2 id="cdn" class="h2 scroll-item">CDN</h2>
         <p class="p">
           Podemos agregar a nuestra página el cdn de la librería en la cabecera de la página.
         </p>
@@ -40,7 +36,7 @@
     </app-article>
 
     <app-article>
-        <h2 class="h2">Plantilla</h2>
+        <h2 class="h2 scroll-item" id="plantilla" >Plantilla</h2>
         <p class="p">Una plantilla para agregagar la librería</p>
     
 
@@ -59,3 +55,11 @@
     </app-article>
 
 </app-paginas>  
+
+
+<div class="scroll-spy">
+  <ul>
+      <li><a data-scroll="#cdn">CDN</a></li>
+      <li><a data-scroll="#plantilla">Plantilla</a></li>
+  </ul>
+</div>

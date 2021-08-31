@@ -67,7 +67,7 @@ export class StartComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit(): void {
-
+    this.iniciar.scrollSpy()
 
   }
 
