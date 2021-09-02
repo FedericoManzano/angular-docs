@@ -4,9 +4,9 @@
 
 
     <app-article>
-        <h2 class="h2">Node Js - NPM / Yarn</h2>
+        <h2 id="node" class="h2 scroll-item">Node Js - NPM / Yarn</h2>
 
-        <h3 class="h3">Npm</h3>
+        <h3 id="npm" class="h3 scroll-item">Npm</h3>
 
         <p class="p">Podemos descargar la librería como una dependencia de Node Js a través de la consola.</p>
 
@@ -20,7 +20,7 @@
         {{npm}}
         </pre>
 
-        <h3 class="h3">Yarn</h3>
+        <h3 id="yarn" class="h3 scroll-item">Yarn</h3>
 
         <p class="p">También podemos utilizar el gestor de pauqetes Yarn para incluir en el package de nuestro proyecto
           la librería.
@@ -34,7 +34,7 @@
         <pre class="cod-js" id="2">
         {{yarn}}
         </pre>
-        <h3 class="h3">Descarga directa</h3>
+        <h3 id="directa" class="h3 scroll-item">Descarga directa</h3>
         <p class="p">Descarga directa a través del archivo <span class="res">.zip</span> del repositorio subido en github.</p>
         <p class="p t-force">
           Descarga directa: <a href="https://github.com/FedericoManzano/bodystyle-2.git" class="link">Repositorio</a>
@@ -49,4 +49,14 @@
 
 
 </app-paginas>
-        
+
+
+<div class="scroll-spy">
+  <ul>
+      <li><a data-scroll="#body">Introducción</a></li>
+      <li><a data-scroll="#node">NodeJs</a></li>
+      <li><a data-scroll="#npm">Npm</a></li>
+      <li><a data-scroll="#yarn">Yarn</a></li>
+      <li><a data-scroll="#directa">Directa</a></li>
+  </ul>
+</div>

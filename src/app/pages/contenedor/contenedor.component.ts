@@ -35,7 +35,7 @@ export class ContenedorComponent implements OnInit, AfterViewInit {
     //CodigoHtml.iniciar({lineas: false, tipo: "texto"})
     BS.CssInit({lineas: false})
     BS.HtmlInit({lineas: false, tipo: "texto"})
-    BS.AutoInit()
+
   }
 
 

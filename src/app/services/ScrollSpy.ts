@@ -50,14 +50,9 @@ const clickScroll = () => {
         let wScrollTop = $(window).scrollTop()
         console.log(h)
         if(wScrollTop !== undefined && h !== undefined) {
-
-            
-                $(window).scrollTop(h - 20)
-                $(".scroll-spy ul li a").removeClass("select")
-                $(e.target).addClass("select")
-            
-
-            
+            $(window).scrollTop(h - 20)
+            $(".scroll-spy ul li a").removeClass("select")
+            $(e.target).addClass("select")
         }
     })
 }
