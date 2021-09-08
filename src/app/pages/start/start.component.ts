@@ -57,7 +57,11 @@ export class StartComponent implements OnInit, AfterViewInit {
   plantilla:string = ""
 
   titulo:string = "Bodystyle"
-  parrafo:string =  "Librería de estilos CSS para la rápida creación de la interfaz de usuario UI";
+  parrafo:string =  `
+  Librería de estilos CSS para la rápida creación de la interfaz de usuario UI.
+  A través de la librería podemos modelar, organizar y crear todo el fronend de un sitio 
+  o aplicación web en un tiempo corto de tiempo.
+  `;
 
 
   mostrarToast() {

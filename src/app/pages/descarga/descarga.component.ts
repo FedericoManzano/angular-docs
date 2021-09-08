@@ -25,8 +25,11 @@ export class DescargaComponent implements OnInit, AfterViewInit {
   npm:string = "";
   yarn:string = "";
 
-  titulo:string = "Bodystyle"
-  parrafo:string =  "Librería de estilos CSS para la rápida creación de la interfaz de usuario UI";
+  titulo:string = "Descarga"
+  parrafo:string =  `
+  En este apartado podemos ver las diferentes formas de descargar la librería a través de los 
+  gestores de paquetes de NodeJs o a través de la descarga directa.
+  `;
 
 
   mostrarToast() {

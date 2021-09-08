@@ -14,12 +14,12 @@ export class InicializarService {
   iniciar() {
     $("h1, h2, h3, h4").on("mouseenter", (e) => {
       $(e.target).append(" ")
-      $(e.target).append("<span class='bs-label'>&nbsp&nbsp</span>")
+      $(e.target).append("<span class='bs-doneall'>&nbsp&nbsp</span>")
 
 
-      $(".bs-label").css("font-size", "70%")
-      $(".bs-label").css("cursor", "pointer")
-      $(".bs-label").css("color", "#8FFFE4")
+      $(".bs-doneall").css("font-size", "90%")
+      $(".bs-doneall").css("cursor", "pointer")
+      $(".bs-doneall").css("color", "#8FFFE4")
 
       $(e.target).children("span").on("click", (e) => {
         var h = $(e.target).offset()?.top
@@ -29,7 +29,7 @@ export class InicializarService {
       })
     })
     $("h1, h2, h3, h4").on("mouseleave", (e) => {
-      $(".bs-label").remove()
+      $(".bs-doneall").remove()
       
     })
     
@@ -42,9 +42,4 @@ export class InicializarService {
   scrollSpy () {
     ScrollSpy.init()
   }
-
-  
-
-
-
 }
