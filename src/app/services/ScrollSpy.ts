@@ -8,6 +8,7 @@ const init = () => {
     })
 
     $(".scroll-spy ul li a").on("click", (e) => {
+        
         $(".scroll-spy ul li a").each((index, ele) => {
             $(ele).removeClass("select")
         })
@@ -27,13 +28,13 @@ const configScroll = () => {
             if( wScrollTop >= eleOffsettop - 200 ) {
                 let id = $(ele).attr("id")
                 $(".scroll-spy ul li a").each((index, ele) => {
+                    $(ele).css("cursor", "pointer")
                     if( $(ele).data("scroll") === "#" + id ) {
                         $(ele).addClass("select")
                         let h = $(ele).offset()?.top
                         
-                    } else {
+                    } else 
                         $(ele).removeClass("select")
-                    }
                 })
             }
         }

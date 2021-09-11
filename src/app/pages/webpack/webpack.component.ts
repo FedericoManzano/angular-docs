@@ -1,5 +1,12 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { InicializarService } from "../../services/inicializar.service"
+
+
+
 declare var CodigoJs : any
+
+
+
 @Component({
   selector: 'app-webpack',
   templateUrl: './webpack.component.html',
@@ -9,9 +16,11 @@ declare var CodigoJs : any
 
 export class WebpackComponent implements OnInit, AfterViewInit {
 
-  constructor() {
-    this.titulo = "webpack"
-    this.parrafo = "Forma de agregar módulos de la librería en JS."
+  constructor(private iniciar: InicializarService) {
+    this.titulo = "Webpack"
+    this.parrafo = `Forma de agregar módulos de la librería en JS. En determinados proyectos que
+    que trabajamos con webpack y podemos modularizar el código de JS, debemos importar los módulos de manera 
+    individual.`
     this.react = `
     import Modulo from 'body-ui/src/moduls/Modulo'
     /**
@@ -62,6 +71,7 @@ export class WebpackComponent implements OnInit, AfterViewInit {
   }
   ngAfterViewInit(): void {
     CodigoJs.iniciar({lineas: false})
+    this.iniciar.iniciar()
   }
 
 
@@ -74,7 +84,15 @@ export class WebpackComponent implements OnInit, AfterViewInit {
   ejemplo:string = ""
   angular:string = ""
   dec:string = ""
+  mostrarToast() {
+    this.iniciar.mensaje()
+  }
+
+
+
   ngOnInit(): void {
+    this.iniciar.scrollSpy()
+
   }
 
 }
