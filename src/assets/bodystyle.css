@@ -16319,7 +16319,7 @@ table tbody tr td {
 }
 
 .tabla-oscura {
-  background-color: var(--fish);
+  background-color: var(--dark);
 }
 
 .tabla-oscura tbody tr td {

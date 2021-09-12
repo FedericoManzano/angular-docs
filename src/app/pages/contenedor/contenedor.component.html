@@ -6,8 +6,6 @@
         <h2 class="h2 scroll-item" id="clase">Clase container</h2>
 
         <p class="p">
-
-            
             Se añade la clase <span class="res">container</span> para centrar el contenido dentro 
             de una etiqueta HTML.
          </p>
@@ -34,6 +32,61 @@
         <pre class="cod-css" id="2">
         {{box}}
         </pre>
+
+
+        <h3 id="medidas" class="scroll-item h3">
+            Medidas
+        </h3>
+
+        <p class="p">
+            Las medidas de reajuste según en tamaño del dispositivos son las siguientes.
+        </p>
+
+        <div class="tabla-responsive">
+            <table class="borde-vertical tabla-oscura">
+                <thead>
+                    <tr>
+                        <td>Medida</td>
+                        <td>Porcentaje</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Mayor 1024 px
+                        </td>
+                        <td>
+                            75 %
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Entre 768 y 1024 px
+                        </td>
+                        <td>
+                            85 %
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Entre 400 y 768 px
+                        </td>
+                        <td>
+                            90 %
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Menores a 400 px
+                        </td>
+
+                        <td>
+                            95 %
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </app-article>
 
 </app-paginas>
@@ -41,7 +94,10 @@
 
 <div class="scroll-spy">
     <ul>
+        <li><a data-scroll="#body">Introducción</a></li>
         <li><a data-scroll="#clase">Clase</a></li>
-     
+        <li><a data-scroll="#medidas">Medidas</a></li>
     </ul>
   </div>
+        
+      

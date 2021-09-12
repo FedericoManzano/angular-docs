@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InicializarService } from "../../services/inicializar.service"
+declare var CodigoJs : any
 
 @Component({
   selector: 'app-flexbox',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlexboxComponent implements OnInit {
 
-  constructor() { }
+  constructor( private iniciar: InicializarService ) { }
 
   ngOnInit(): void {
   }
