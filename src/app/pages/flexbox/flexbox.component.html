@@ -1,1 +1,51 @@
-<p>flexbox works!</p>
+<app-paginas>
+    
+    <app-componente-principal [titulo]="titulo" [parrafo]="parrafo"></app-componente-principal>
+
+    <app-article>
+        <h2 id="flex" class="h2 scroll-item">
+            Display Flex
+        </h2>
+        <p class="p">
+            Con la clase <span class="res">d-flex</span> podemos rehubicar a todos los elementos 
+            de manera horizontal uno al lado del otro sin necesidad de utilizar una instrucción vieja de css 
+            <span class="res">float: left</span>. 
+        </p>
+
+        <div class="d-flex">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+        </div>
+
+        <a class="copy mt-1" data-target="#1">
+            <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
+              Copiar
+            </span>
+        </a>
+    
+        <pre class="cod-html" id="1">
+        {{flex}}
+        </pre>
+
+
+    </app-article>
+
+
+</app-paginas>
+
+
+<div class="scroll-spy">
+  <ul>
+      <li><a data-scroll="#body">Introducción</a></li>
+      <li><a data-scroll="#flex">Flex</a></li>
+      <li><a data-scroll="#npm">Npm</a></li>
+      <li><a data-scroll="#yarn">Yarn</a></li>
+      <li><a data-scroll="#directa">Directa</a></li>
+  </ul>
+</div>
+
