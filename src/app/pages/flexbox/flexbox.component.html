@@ -22,7 +22,7 @@
             <div class="box">7</div>
         </div>
 
-        <a class="copy mt-1" data-target="#1">
+        <a class="copy mt-1" data-target="#1" (click)="mostrarToast()">
             <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
               Copiar
             </span>
@@ -36,6 +36,115 @@
     </app-article>
 
 
+    <app-article>
+        <h2 id="wrap" class="h2 scroll-item">
+            Flex wrap - no wrap
+        </h2>
+    
+        <p class="p">
+            El ancho de los elementos pueden ser fijos o variables (dependen del ancho del contenedor padre). 
+            En el caso de los ultimos mencionados cuando utilizamos flexbox el ancho se ajusta y se comprime a medida 
+            que los tamaños de pantalla son más pequeños. 
+            En el caso de los elementos con un ancho fijo, por ejemplo 300px, este ancho no debería ser modificado, pero 
+            en el caso de flexbox rompe esta recha y el ancho es reajustado para que quepa en el ancho del contenedor 
+            padre. Para que esto no suceda se utiliza una propiedad de CSS <span class="res">wrap</span>. 
+        </p>
+
+        <div class="d-flex">
+            <div class="box-f">1</div>
+            <div class="box-f">2</div>
+            <div class="box-f">3</div>
+            <div class="box-f">4</div>
+            <div class="box-f">5</div>
+            <div class="box-f">6</div>
+            <div class="box-f">7</div>
+        </div>
+
+
+
+        <a class="copy mt-1" data-target="#2" (click)="mostrarToast()">
+            <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
+              Copiar
+            </span>
+        </a>
+    
+        <pre class="cod-html" id="2">
+        {{flex_fijo}}
+        </pre>
+
+        <p class="p mt-1">
+            En el caso del ejemplo anterior los elementos son de 250px fijos. Pero como estamos utilizando 
+            flexbox este ancho disminuye para que los mismos quepan en ancho del contenedor padre.
+        </p>
+
+        <h3 class="h3 scroll-item" id="movil" >Flex wrap</h3>
+
+
+        <div class="d-flex flex-wrap">
+            <div class="box-f">1</div>
+            <div class="box-f">2</div>
+            <div class="box-f">3</div>
+            <div class="box-f">4</div>
+            <div class="box-f">5</div>
+            <div class="box-f">6</div>
+            <div class="box-f">7</div>
+        </div>
+
+        <a class="copy mt-1" data-target="#3" (click)="mostrarToast()">
+            <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
+              Copiar
+            </span>
+        </a>
+    
+    <pre class="cod-html" id="3">
+        {{flex_wrap}}
+    </pre>
+
+
+    <div class="alert mt-2">
+        Por defecto el valor de la propiedad es no-wrap. Si queremos cambiar esto 
+        debemos añadir la clase <span class="res">flex-wrap</span>. 
+    </div>
+
+    
+
+    </app-article>
+
+    <app-article>
+        <h2 id="horizontal" class="h2 scroll-item">
+            Alineamiento Horizontal
+        </h2>
+
+        <p class="p">
+            Las clases necesarias para el alineamiento horizontal de los elementos.
+        </p>
+
+        <div class="alert">
+            Todas las clases que se van a ver a continuación son para elementos con flexbox 
+            con la propiedad wrap por defecto. De modo tal que todos los elementos queden contenidos 
+            en una sola linea. 
+        </div>
+
+        <div class="d-flex just-center mt-2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+
+
+        <a class="copy mt-1" data-target="#4" (click)="mostrarToast()">
+            <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
+              Copiar
+            </span>
+        </a>
+    
+        <pre class="cod-html" id="4">
+            {{just_center}}
+        </pre>
+
+    </app-article>
+
+
 </app-paginas>
 
 
@@ -43,8 +152,8 @@
   <ul>
       <li><a data-scroll="#body">Introducción</a></li>
       <li><a data-scroll="#flex">Flex</a></li>
-      <li><a data-scroll="#npm">Npm</a></li>
-      <li><a data-scroll="#yarn">Yarn</a></li>
+      <li><a data-scroll="#wrap">Wrap</a></li>
+      <li><a data-scroll="#movil">Flex wrap</a></li>
       <li><a data-scroll="#directa">Directa</a></li>
   </ul>
 </div>

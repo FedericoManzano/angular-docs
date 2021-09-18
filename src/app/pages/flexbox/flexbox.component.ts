@@ -37,6 +37,37 @@ export class FlexboxComponent implements OnInit, AfterViewInit {
     <div class="box">7</div>
   </div>
   `
+  flex_fijo:string = `
+  <div class="d-flex">
+    <div class="box-f">1</div>
+    <div class="box-f">2</div>
+    <div class="box-f">3</div>
+    <div class="box-f">4</div>
+    <div class="box-f">5</div>
+    <div class="box-f">6</div>
+    <div class="box-f">7</div>
+  </div>
+  `
+
+  flex_wrap:string = `
+  <div class="d-flex flex-wrap">
+    <div class="box-f">1</div>
+    <div class="box-f">2</div>
+    <div class="box-f">3</div>
+    <div class="box-f">4</div>
+    <div class="box-f">5</div>
+    <div class="box-f">6</div>
+    <div class="box-f">7</div>
+  </div>
+  `
+
+  just_center:string = `
+  <div class="d-flex just-center">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+  `
 
   mostrarToast() {
     this.iniciar.mensaje()

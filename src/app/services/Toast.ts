@@ -7,7 +7,6 @@ class Toast {
     static show(
         
         {html="Este es un toast", bg="red", color = "white", time=3000, classes = [] } = {}) {
-            console.log("Esto es destro de la clase");
         $(".toast").remove()
 
         let toast = $( `<div class='toast'>${html}</div>` )
